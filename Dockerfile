@@ -7,6 +7,7 @@ ARG HOME=/var/lib/superset/
 ENV SUPERSET_HOME=${HOME}
 
 COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 COPY superset_config.py /etc/superset/superset_config.py
 
 # USER root
