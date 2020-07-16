@@ -4,11 +4,11 @@ set -x
 TRY_LOOP="20"
 
 superset fab create-admin \
-   --username $SUPERSET_USERNAME \
-   --firstname $SUPERSET_FNAME \
-   --lastname $SUPERSET_LNAME \
-   --password $SUPERSET_PW \
-   --email $SUPERSET_EMAIL
+   --username $ADMIN_USERNAME \
+   --firstname $ADMIN_FNAME \
+   --lastname $ADMIN_LNAME \
+   --password $ADMIN_PW \
+   --email $ADMIN_EMAIL
 
 superset db upgrade
 # superset load_examples

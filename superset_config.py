@@ -113,8 +113,8 @@ from superset.typing import CacheConfig
 #
 ROW_LIMIT = 1000000
 VIZ_ROW_LIMIT = 1000000
-# # max rows retreieved when requesting samples from datasource in explore view
-# SAMPLES_ROW_LIMIT = 1000
+# max rows retreieved when requesting samples from datasource in explore view
+SAMPLES_ROW_LIMIT = 1000
 # # max rows retrieved by filter select auto complete
 # FILTER_SELECT_ROW_LIMIT = 10000
 # SUPERSET_WORKERS = 2  # deprecated
@@ -473,16 +473,16 @@ CACHE_CONFIG: CacheConfig = {
 # # Maximum number of rows returned from a database
 # # in async mode, no more than SQL_MAX_ROW will be returned and stored
 # # in the results backend. This also becomes the limit when exporting CSVs
-# SQL_MAX_ROW = 100000
+SQL_MAX_ROW = 10000000
 #
 # # Maximum number of rows displayed in SQL Lab UI
 # # Is set to avoid out of memory/localstorage issues in browsers. Does not affect
 # # exported CSVs
-# DISPLAY_MAX_ROW = 10000
+DISPLAY_MAX_ROW = 1000
 #
 # # Default row limit for SQL Lab queries. Is overridden by setting a new limit in
 # # the SQL Lab UI
-# DEFAULT_SQLLAB_LIMIT = 1000
+DEFAULT_SQLLAB_LIMIT = 1000
 #
 # # Maximum number of tables/views displayed in the dropdown window in SQL Lab.
 # MAX_TABLE_NAMES = 3000
